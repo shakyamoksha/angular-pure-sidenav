@@ -1,0 +1,158 @@
+<div #sidebar class="sidebar close">
+
+  <div class="logo-details">
+    <!-- icon -->
+    <i (click)="triggerSidebar()" class='bx bxl-slack-old'></i>
+
+    <!-- brand -->
+    <span class="logo_name">xRannan</span>
+
+<!--    <i *ngIf="!openState" (click)="triggerSidebar()" class='bx bx-x'></i>-->
+  </div>
+
+  <ul class="nav-links">
+
+    <li>
+      <a href="#">
+        <i class='bx bx-grid-alt bx-spin' ></i>
+        <span class="link_name">Dashboard</span>
+      </a>
+
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Dashboard</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <div class="icon-link">
+        <a href="#">
+          <i class='bx bx-collection' ></i>
+          <span class="link_name">Category</span>
+        </a>
+        <i (click)="dropdownTrigger($event)" class='bx bx-chevron-down arrow' ></i>
+      </div>
+
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Category</a></li>
+        <li><a href="#">React</a></li>
+        <li><a href="#">Django</a></li>
+        <li><a href="#">Spring Boot</a></li>
+        <li><a href="#">Angular</a></li>
+      </ul>
+
+    </li>
+
+    <li>
+
+      <div class="icon-link">
+        <a href="#">
+          <i class='bx bx-book-alt' ></i>
+          <span class="link_name">Posts</span>
+        </a>
+        <i (click)="dropdownTrigger($event)" class='bx bx-chevron-down arrow' ></i>
+      </div>
+
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Posts</a></li>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Card Design</a></li>
+        <li><a href="#">Login Form</a></li>
+      </ul>
+
+    </li>
+
+    <li>
+      <a href="#">
+        <i class='bx bx-pie-chart-alt-2'></i>
+        <span class="link_name">Analytics</span>
+      </a>
+
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Analytics</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class='bx bx-line-chart' ></i>
+        <span class="link_name">Chart</span>
+      </a>
+
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Chart</a></li>
+      </ul>
+    </li>
+
+    <li>
+
+      <div class="icon-link">
+        <a href="#">
+          <i class='bx bx-plug' ></i>
+          <span class="link_name">Modules</span>
+        </a>
+        <i (click)="dropdownTrigger($event)" class='bx bx-chevron-down arrow' ></i>
+      </div>
+
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Modules</a></li>
+        <li><a href="#">Material Design</a></li>
+        <li><a href="#">Pigments</a></li>
+        <li><a href="#">Box Icons</a></li>
+      </ul>
+
+    </li>
+
+    <li>
+      <a href="#">
+        <i class='bx bx-compass' ></i>
+        <span class="link_name">Explore</span>
+      </a>
+
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Explore</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class='bx bx-history' ></i>
+        <span class="link_name">History</span>
+      </a>
+
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">History</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class='bx bx-cog' ></i>
+        <span class="link_name">Settings</span>
+      </a>
+
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Settings</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <div class="profile-details">
+        <div class="profile-content">
+          <img src="../assets/profile/profile.jpeg" alt="profile_picture">
+        </div>
+        <div class="name-job">
+          <div class="profile_name">Deeptish Sookun</div>
+          <div class="job">Software Engineer</div>
+        </div>
+        <i class='bx bx-log-out-circle'></i>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+<section class="home-section">
+<!--Content goes here-->
+
+
+</section>
