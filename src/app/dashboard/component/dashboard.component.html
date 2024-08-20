@@ -1,13 +1,10 @@
 <div #sidebar class="sidebar close">
 
   <div class="logo-details">
-    <!-- icon -->
     <i (click)="triggerSidebar()" class='bx bxl-slack-old'></i>
 
     <!-- brand -->
     <span class="logo_name">xRannan</span>
-
-    <!--    <i *ngIf="!openState" (click)="triggerSidebar()" class='bx bx-x'></i>-->
   </div>
 
   <ul class="nav-links">
@@ -24,12 +21,12 @@
     </li>
 
     <li>
-      <div class="icon-link">
+      <div class="icon-link" (click)="dropdownTrigger($event)">
         <a routerLink="/category">
-          <i class='bx bx-collection' ></i>
+          <i class='bx bx-collection'></i>
           <span class="link_name">Category</span>
         </a>
-        <i (click)="dropdownTrigger($event)" class='bx bx-chevron-down arrow' ></i>
+        <i class='bx bx-chevron-down arrow' ></i>
       </div>
 
       <ul class="sub-menu">
@@ -44,12 +41,12 @@
 
     <li>
 
-      <div class="icon-link">
+      <div class="icon-link" (click)="dropdownTrigger($event)">
         <a routerLink="/posts">
           <i class='bx bx-book-alt' ></i>
           <span class="link_name">Posts</span>
         </a>
-        <i (click)="dropdownTrigger($event)" class='bx bx-chevron-down arrow' ></i>
+        <i class='bx bx-chevron-down arrow' ></i>
       </div>
 
       <ul class="sub-menu">
@@ -152,8 +149,6 @@
 </div>
 
 <section class="home-section">
-
   <!-- Add Content Here -->
   <router-outlet></router-outlet>
-
 </section>
